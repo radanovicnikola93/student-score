@@ -30,3 +30,10 @@ def average(numbers):
   total = float(total)
   return total / len(numbers)
 
+def get_average(students):
+    homework = average(students["homework"])
+    homework = average(students['quizzes'])
+    homework = average(students['tests'])
+    return 0.1 * average(students["homework"]) + 0.3 * average(students['quizzes']) + 0.6 * average(students['tests'])
+
+
