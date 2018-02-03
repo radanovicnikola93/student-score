@@ -49,9 +49,9 @@ def get_grade(score):
         return 'F'
 
 print ''
-print 'Lloyd average score is: %s' % get_grade(get_average(lloyd))
-print 'Alice average score is: %s' % get_grade(get_average(alice))
-print 'Tylers average score is: %s' % get_grade(get_average(tyler))
+print "Lloyd's grade is: %s" % get_grade(get_average(lloyd))
+print "Alice's grade is: %s" % get_grade(get_average(alice))
+print "Tylers's grade is: %s" % get_grade(get_average(tyler))
 
 def get_class_average(class_list):
   results = []
@@ -59,3 +59,10 @@ def get_class_average(class_list):
     get_average(student)
     results.append(get_average(student))
   return average(results)
+
+
+students = [lloyd, alice, tyler]
+class_avg = get_class_average(students)
+print ''
+print 'Class average score is: %s' % class_avg
+print 'Class average grade is: %s' % get_grade(class_avg)
