@@ -52,3 +52,10 @@ print ''
 print 'Lloyd average score is: %s' % get_grade(get_average(lloyd))
 print 'Alice average score is: %s' % get_grade(get_average(alice))
 print 'Tylers average score is: %s' % get_grade(get_average(tyler))
+
+def get_class_average(class_list):
+  results = []
+  for student in class_list:
+    get_average(student)
+    results.append(get_average(student))
+  return average(results)
